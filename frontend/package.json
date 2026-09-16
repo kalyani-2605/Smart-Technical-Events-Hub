@@ -1,0 +1,20 @@
+{
+  "name": "smart-technical-events-hub-frontend",
+  "version": "1.0.0",
+  "description": "Static frontend (HTML/CSS/vanilla JS) for the Smart Technical Events Hub, served via Express.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "static-server",
+    "events",
+    "college-project"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

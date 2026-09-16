@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Technical Events Hub — Discover Every Technical Opportunity</title>
+<meta name="description" content="Discover, register for and manage hackathons, workshops, seminars and technical fests across your college — all in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">STH</span> Smart Technical Events Hub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-auth-mobile"><a href="login.html">Login</a></li>
+      <li class="nav-auth-mobile"><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+      <a href="login.html" class="btn btn-outline btn-sm nav-auth-desktop">Login</a>
+      <a href="signup.html" class="btn btn-primary btn-sm nav-auth-desktop">Sign Up</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Live across 42 departments</div>
+      <h1>Discover Every Technical <span class="accent">Opportunity</span> in Your College</h1>
+      <p class="hero-sub">One dashboard for every <span class="hero-rotate" style="transition:opacity .2s;">Hackathon</span> your campus runs — hackathons, workshops, seminars, tech fests, internship drives and certification programs. Find it, register in a click, track it to completion.</p>
+      <div class="hero-actions">
+        <a href="events.html" class="btn btn-primary">Explore Events <i class="bi bi-arrow-right"></i></a>
+        <a href="signup.html" class="btn btn-outline">Register Now</a>
+      </div>
+      <div class="hero-tags">
+        <span class="tag">#Hackathons</span>
+        <span class="tag">#Workshops</span>
+        <span class="tag">#TechFests</span>
+        <span class="tag">#Internships</span>
+      </div>
+    </div>
+    <div class="console">
+      <div class="console-bar"><span></span><span></span><span></span><span class="console-title">events_hub.status</span></div>
+      <div class="console-body">
+        <div class="line"><span class="k">$</span><span class="v">fetch --upcoming --dept=CSE</span></div>
+        <div class="line"><span class="k">event:</span><span class="v">CodeStorm Hackathon 2026</span></div>
+        <div class="line"><span class="k">status:</span><span class="v status-open">OPEN</span></div>
+        <div class="line"><span class="k">seats:</span><span class="v">184 / 250</span></div>
+        <div class="line"><span class="k">deadline:</span><span class="v">02d 14h 22m</span></div>
+        <div class="line"><span class="k">$</span><span class="v">register --now<span class="cursor"></span></span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STATS ============ -->
+<section class="stats" style="padding-top:0;">
+  <div class="container">
+    <div class="stat"><b>250+</b><span>Technical Events</span></div>
+    <div class="stat"><b>5000+</b><span>Students</span></div>
+    <div class="stat"><b>150+</b><span>Organizers</span></div>
+    <div class="stat"><b>300+</b><span>Workshops</span></div>
+    <div class="stat"><b>100+</b><span>Hackathons</span></div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Browse by category</div>
+      <h2>Every Format, One Hub</h2>
+      <p>Filter through the exact kind of technical opportunity you're looking for.</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card" data-goto="hackathons"><div class="cat-icon"><i class="bi bi-code-slash"></i></div><h3>Hackathons</h3><p>48-hour builds, real prizes, real teams.</p></div>
+      <div class="cat-card" data-goto="coding"><div class="cat-icon"><i class="bi bi-braces"></i></div><h3>Coding Competitions</h3><p>Algorithmic contests and speed coding.</p></div>
+      <div class="cat-card" data-goto="workshops"><div class="cat-icon"><i class="bi bi-tools"></i></div><h3>Workshops</h3><p>Hands-on sessions with industry tools.</p></div>
+      <div class="cat-card" data-goto="seminars"><div class="cat-icon"><i class="bi bi-mic"></i></div><h3>Seminars</h3><p>Talks from researchers and alumni.</p></div>
+      <div class="cat-card" data-goto="fests"><div class="cat-icon"><i class="bi bi-stars"></i></div><h3>Technical Fests</h3><p>Campus-wide multi-event festivals.</p></div>
+      <div class="cat-card" data-goto="bootcamps"><div class="cat-icon"><i class="bi bi-lightning-charge"></i></div><h3>Bootcamps</h3><p>Intensive multi-day skill sprints.</p></div>
+      <div class="cat-card" data-goto="internships"><div class="cat-icon"><i class="bi bi-briefcase"></i></div><h3>Internship Drives</h3><p>Campus placements and internships.</p></div>
+      <div class="cat-card" data-goto="certifications"><div class="cat-icon"><i class="bi bi-patch-check"></i></div><h3>Certifications</h3><p>Verified credentials from partners.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED EVENTS ============ -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head" style="display:flex; align-items:flex-end; justify-content:space-between; max-width:none;">
+      <div>
+        <div class="eyebrow">Handpicked this week</div>
+        <h2>Featured Events</h2>
+      </div>
+      <a href="events.html" class="btn btn-outline">View All Events</a>
+    </div>
+    <div class="event-grid">
+
+      <div class="event-card">
+        <div class="event-poster">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <i class="bi bi-code-slash icon-big"></i>
+          <span class="cat-label">Hackathon</span>
+          <button class="event-bookmark" aria-label="Bookmark"><i class="bi bi-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <span class="event-status open">Registrations Open</span>
+          <h3>CodeStorm Hackathon 2026</h3>
+          <p class="event-desc">A 36-hour campus hackathon for teams of four building solutions for campus life.</p>
+          <div class="event-meta">
+            <div><i class="bi bi-calendar3"></i> Aug 14–15, 2026</div>
+            <div><i class="bi bi-geo-alt"></i> CSE Seminar Hall</div>
+            <div><i class="bi bi-people"></i> 184 / 250 seats</div>
+            <div><i class="bi bi-hourglass-split"></i> Deadline: Aug 10, 2026</div>
+          </div>
+          <div class="event-foot">
+            <a href="event-details.html" class="btn btn-outline btn-sm">Details</a>
+            <a href="#" class="btn btn-primary btn-sm js-register">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-poster" style="background:linear-gradient(135deg,#123 ,#2E5EFF);">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <i class="bi bi-cpu icon-big"></i>
+          <span class="cat-label">Workshop</span>
+          <button class="event-bookmark" aria-label="Bookmark"><i class="bi bi-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <span class="event-status closing">Closing Soon</span>
+          <h3>Embedded Systems with ARM Cortex</h3>
+          <p class="event-desc">Hands-on workshop covering firmware, GPIO and RTOS basics on ARM boards.</p>
+          <div class="event-meta">
+            <div><i class="bi bi-calendar3"></i> Aug 3, 2026</div>
+            <div><i class="bi bi-geo-alt"></i> ECE Lab 2</div>
+            <div><i class="bi bi-people"></i> 58 / 60 seats</div>
+            <div><i class="bi bi-hourglass-split"></i> Deadline: Jul 30, 2026</div>
+          </div>
+          <div class="event-foot">
+            <a href="event-details.html" class="btn btn-outline btn-sm">Details</a>
+            <a href="#" class="btn btn-primary btn-sm js-register">Register</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-poster" style="background:linear-gradient(135deg,#0B1B33,#00A8CC);">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <i class="bi bi-diagram-3 icon-big"></i>
+          <span class="cat-label">Technical Fest</span>
+          <button class="event-bookmark" aria-label="Bookmark"><i class="bi bi-bookmark"></i></button>
+        </div>
+        <div class="event-body">
+          <span class="event-status open">Registrations Open</span>
+          <h3>Vertex 2026 — Annual Tech Fest</h3>
+          <p class="event-desc">Three days, twelve events — from robotics wars to a 24-hour hack room.</p>
+          <div class="event-meta">
+            <div><i class="bi bi-calendar3"></i> Sep 18–20, 2026</div>
+            <div><i class="bi bi-geo-alt"></i> Main Campus Grounds</div>
+            <div><i class="bi bi-people"></i> 940 / 1500 seats</div>
+            <div><i class="bi bi-hourglass-split"></i> Deadline: Sep 10, 2026</div>
+          </div>
+          <div class="event-foot">
+            <a href="event-details.html" class="btn btn-outline btn-sm">Details</a>
+            <a href="#" class="btn btn-primary btn-sm js-register">Register</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">From the community</div>
+      <h2>What Students Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="testi-quote">"I stopped missing hackathon deadlines the moment I started using this. Everything's in one dashboard now."</p>
+        <div class="testi-person"><div class="avatar">RA</div><div><b>Rhea Agarwal</b><span>3rd Year, CSE</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"As an organizer, publishing an event and tracking registrations takes minutes instead of a WhatsApp group chaos."</p>
+        <div class="testi-person"><div class="avatar">KV</div><div><b>Karthik Varma</b><span>Tech Club Lead, ECE</span></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"The certificate wallet alone is worth it — every workshop I've completed, downloadable in one place."</p>
+        <div class="testi-person"><div class="avatar">SN</div><div><b>Sneha Nair</b><span>Final Year, IT</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA STRIP ============ -->
+<section class="section-alt" style="padding:64px 0;">
+  <div class="container text-center">
+    <h2 style="margin-bottom:14px;">Ready for what's next on campus?</h2>
+    <p style="max-width:520px; margin:0 auto 28px;">Create your student profile and get matched with every technical event running in your department.</p>
+    <a href="signup.html" class="btn btn-primary">Create Free Account</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-mark">STH</span> Smart Technical Events Hub</div>
+        <p>The single home for every hackathon, workshop, seminar and tech fest happening across your college campus.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Browse Events</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Code of Conduct</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Smart Technical Events Hub. Built for engineering students, by engineering students.</span>
+      <span><a href="#">Privacy</a><a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+<script src="js/script.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

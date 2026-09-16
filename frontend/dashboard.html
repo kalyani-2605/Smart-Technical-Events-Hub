@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Smart Technical Events Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">STH</span> Smart Technical Events Hub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-auth-mobile"><a href="login.html">Login</a></li>
+      <li class="nav-auth-mobile"><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+      <button class="theme-toggle notif-bell" aria-label="Notifications"><i class="bi bi-bell"></i></button>
+      <a href="profile.html" class="avatar" style="width:38px; height:38px; font-size:0.85rem;">AS</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header dash-hero">
+  <div class="container">
+    <div class="eyebrow">Welcome back</div>
+    <h1 style="font-size:2rem;">Hi Ananya, here's what's happening</h1>
+    <p>You have 2 events this week and 1 certificate ready to download.</p>
+  </div>
+</header>
+
+<section style="padding-top:36px;">
+  <div class="container">
+
+    <div class="dash-grid">
+      <div class="dash-stat"><i class="bi bi-calendar-check"></i><b>6</b><span>Registered Events</span></div>
+      <div class="dash-stat"><i class="bi bi-hourglass-split"></i><b>2</b><span>Upcoming Events</span></div>
+      <div class="dash-stat"><i class="bi bi-patch-check"></i><b>4</b><span>Certificates</span></div>
+      <div class="dash-stat"><i class="bi bi-bell"></i><b>3</b><span>Notifications</span></div>
+      <div class="dash-stat"><i class="bi bi-bookmark-heart"></i><b>9</b><span>Bookmarked Events</span></div>
+    </div>
+
+    <div class="dash-columns">
+      <div>
+        <div class="panel">
+          <h3>Upcoming Events</h3>
+          <div class="list-row">
+            <div class="list-thumb"><i class="bi bi-code-slash"></i></div>
+            <div class="grow"><h4>CodeStorm Hackathon 2026</h4><span>Aug 14–15 &middot; CSE Seminar Hall</span></div>
+            <a href="event-details.html" class="btn btn-outline btn-sm">View</a>
+          </div>
+          <div class="list-row">
+            <div class="list-thumb"><i class="bi bi-cpu"></i></div>
+            <div class="grow"><h4>Embedded Systems with ARM Cortex</h4><span>Aug 3 &middot; ECE Lab 2</span></div>
+            <a href="event-details.html" class="btn btn-outline btn-sm">View</a>
+          </div>
+          <div class="list-row">
+            <div class="list-thumb"><i class="bi bi-briefcase"></i></div>
+            <div class="grow"><h4>Campus Internship Drive</h4><span>Aug 28 &middot; Placement Cell</span></div>
+            <a href="event-details.html" class="btn btn-outline btn-sm">View</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Your Progress</h3>
+          <div class="progress-item">
+            <div class="p-label"><span>Profile Completion</span><span>80%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width:80%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="p-label"><span>Certification Track — Cloud Practitioner</span><span>45%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width:45%;"></div></div>
+          </div>
+          <div class="progress-item">
+            <div class="p-label"><span>Bootcamp Attendance</span><span>100%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width:100%;"></div></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Achievement Badges</h3>
+          <div class="badge-row">
+            <div class="badge"><div class="badge-icon"><i class="bi bi-trophy"></i></div>First Hackathon</div>
+            <div class="badge"><div class="badge-icon"><i class="bi bi-lightning-charge"></i></div>Bootcamp Grad</div>
+            <div class="badge"><div class="badge-icon"><i class="bi bi-people"></i></div>Team Player</div>
+            <div class="badge locked"><div class="badge-icon"><i class="bi bi-lock"></i></div>5-Event Streak</div>
+            <div class="badge locked"><div class="badge-icon"><i class="bi bi-lock"></i></div>Top Presenter</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="panel">
+          <h3>Upcoming Deadlines</h3>
+          <div class="deadline-item"><span>CodeStorm Hackathon — Registration</span><span class="d-date">Aug 10</span></div>
+          <div class="deadline-item"><span>ARM Cortex Workshop — Registration</span><span class="d-date">Jul 30</span></div>
+          <div class="deadline-item"><span>Paper Presentation — Abstract Due</span><span class="d-date">Aug 15</span></div>
+        </div>
+
+        <div class="panel">
+          <h3>Recent Activity</h3>
+          <div class="activity-item"><div class="activity-dot"></div><div><div>Registered for <b>CodeStorm Hackathon 2026</b></div><div class="t">2 hours ago</div></div></div>
+          <div class="activity-item"><div class="activity-dot"></div><div><div>Downloaded certificate for <b>Full-Stack Bootcamp</b></div><div class="t">Yesterday</div></div></div>
+          <div class="activity-item"><div class="activity-dot"></div><div><div>Bookmarked <b>Vertex 2026 Tech Fest</b></div><div class="t">2 days ago</div></div></div>
+          <div class="activity-item"><div class="activity-dot"></div><div><div>Completed profile skills section</div><div class="t">4 days ago</div></div></div>
+        </div>
+
+        <div class="panel">
+          <h3>Bookmarked Events</h3>
+          <div class="list-row"><div class="list-thumb"><i class="bi bi-diagram-3"></i></div><div class="grow"><h4>Vertex 2026 Tech Fest</h4><span>Sep 18–20</span></div></div>
+          <div class="list-row"><div class="list-thumb"><i class="bi bi-braces"></i></div><div class="grow"><h4>Algorithm Arena S5</h4><span>Aug 9</span></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="brand-mark">STH</span> Smart Technical Events Hub</div>
+        <p>The single home for every hackathon, workshop, seminar and tech fest happening across your college campus.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="events.html">Browse Events</a></li><li><a href="dashboard.html">Dashboard</a></li><li><a href="certificates.html">Certificates</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Code of Conduct</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Smart Technical Events Hub. Built for engineering students, by engineering students.</span>
+      <span><a href="#">Privacy</a><a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+<script src="js/script.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>

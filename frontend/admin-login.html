@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login — Smart Technical Events Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">STH</span> Smart Technical Events Hub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-auth-mobile"><a href="login.html">Login</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon-stars"></i></button>
+      <a href="login.html" class="btn btn-outline btn-sm nav-auth-desktop">Student / Organizer Login</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="brand"><span class="brand-mark">STH</span></div>
+    <div class="auth-head">
+      <h1 style="font-size:1.6rem;"><i class="bi bi-shield-lock" style="color:var(--blue);"></i> Admin Sign In</h1>
+      <p>This login is reserved for platform administrators.</p>
+    </div>
+
+    <form id="adminLoginForm" novalidate>
+      <div class="field">
+        <label for="adminLoginEmail">Admin Email</label>
+        <input type="email" id="adminLoginEmail" placeholder="admin@sth.com" required>
+        <div class="hint">Enter a valid email address.</div>
+      </div>
+      <div class="field">
+        <label for="adminLoginPassword">Password</label>
+        <input type="password" id="adminLoginPassword" placeholder="Enter your password" required>
+        <div class="hint">Password must be at least 6 characters.</div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Login to Admin Dashboard</button>
+    </form>
+
+    <div class="auth-foot">
+      Not an admin? <a href="login.html">Student / Organizer login</a>
+    </div>
+
+    <!-- Demo credential, shown for this college project -->
+    <div style="margin-top:22px; padding:16px; border:1px dashed var(--line); border-radius:var(--radius-md); font-size:0.82rem; color:var(--slate);">
+      <strong style="color:var(--ink); display:block; margin-bottom:8px;">
+        <i class="bi bi-info-circle"></i> Demo admin account (after running <code>npm run seed</code>)
+      </strong>
+      <div style="font-family:var(--font-mono);">admin@sth.com</div>
+      <span style="display:block; margin-top:8px;">Password is whatever <code>SEED_PASSWORD</code> is set to in <code>backend/.env</code> (default: <code>Passw0rd!</code>).</span>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer" style="padding:26px 0;">
+  <div class="container footer-bottom" style="border:none; justify-content:center;">
+    <span>&copy; 2026 Smart Technical Events Hub. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
