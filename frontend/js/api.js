@@ -4,8 +4,7 @@
    backend. Loaded AFTER js/script.js on every page.
    ========================================================================= */
 
-const API_URL = 'http://localhost:5003/api';
-
+const API_URL = "https://smart-technical-events-hub.onrender.com";
 /* ============================= Auth storage ============================= */
 
 const Auth = {
